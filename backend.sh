@@ -1,7 +1,7 @@
 script=$(realpath "$0")
 script_path=$(dirname "script")
 source ${script_path}/common.sh
-component=backend
+component="backend"
 mysql_root_password=$1
 schema_setup=mysql
 

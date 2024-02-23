@@ -9,7 +9,8 @@ if [ -z "$mysql_root_password" ];then
 fi
 
 func_print_head "Disable mysql old version"
-dnf module disable mysql -y &>>$log_file
+dnf module disable mysql -y
+#dnf module disable mysql -y &>>$log_file
 func_status_check $?
 
 
